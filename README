@@ -1,0 +1,240 @@
+# RavenStack SaaS Analytics Dashboard
+
+An end-to-end data analytics project that analyzes customer behavior, subscription revenue, support performance, feature usage, and customer churn for a fictional SaaS company, **RavenStack**.
+
+This project demonstrates the complete analytics workflow—from building a PostgreSQL database and writing SQL queries to preparing data with Python and creating interactive Power BI dashboards.
+
+---
+
+## Project Overview
+
+The objective of this project is to transform raw SaaS business data into meaningful business insights.
+
+The analysis focuses on:
+
+- Customer growth
+- Monthly & Annual Recurring Revenue (MRR & ARR)
+- Customer churn
+- Customer acquisition channels
+- Product feature usage
+- Support performance
+
+The final deliverable is an interactive Power BI report designed for business stakeholders.
+
+---
+
+## Tech Stack
+
+- **PostgreSQL** – Database Management
+- **SQL** – Data Validation & Business Analysis
+- **Python (Pandas)** – Data Preparation
+- **Power BI** – Interactive Dashboards
+- **Git & GitHub** – Version Control
+
+---
+
+## Project Structure
+
+```
+ravenstack-saas-analytics/
+│
+├── data/
+│   ├── ravenstack_accounts.csv
+│   ├── ravenstack_subscriptions.csv
+│   ├── ravenstack_support_tickets.csv
+│   ├── ravenstack_churn_events.csv
+│   └── feature_usage.csv
+│
+├── sql/
+│   ├── 01_database_setup.sql
+│   ├── 02_data_validation.sql
+│   ├── 03_customer_overview.sql
+│   ├── 04_revenue_analysis.sql
+│   ├── 05_churn_analysis.sql
+│   └── 06_advanced_sql.sql
+│
+├── python/
+│   ├── dashboard_dataset.py
+│   └── dashboard_dataset.csv
+│
+├── powerbi/
+│   └── SaaS_Customer_Churn_Analytics.pbix
+│
+├── screenshots/
+│   ├── executive_dashboard.png
+│   ├── customer_churn_dashboard.png
+│   └── product_support_dashboard.png
+│
+└── README.md
+```
+
+---
+
+## Database Schema
+
+The project uses five relational tables:
+
+| Table | Description |
+|--------|-------------|
+| Accounts | Customer profile and account information |
+| Subscriptions | Subscription plans, MRR, ARR, upgrades and downgrades |
+| Support Tickets | Customer support interactions and satisfaction |
+| Feature Usage | Product usage metrics and feature adoption |
+| Churn Events | Customer churn records and churn reasons |
+
+Relationships were created using primary and foreign keys within PostgreSQL.
+
+---
+
+## Dashboards
+
+### 1.Executive Dashboard
+
+Provides a high-level overview of business performance.
+
+**Includes:**
+
+- Total Customers
+- Total MRR
+- Total ARR
+- Average MRR
+- Churn Rate
+- Support Tickets
+- Revenue by Plan Tier
+- Churn Rate by Industry
+- Customers by Country
+- Customer Acquisition Channels
+- Customer Growth Trend
+
+---
+
+### 2.Customer & Churn Analysis
+
+Focuses on understanding customer retention.
+
+**Includes:**
+
+- Churn Rate by Plan Tier
+- Churn Rate by Referral Source
+- Top Reasons for Churn
+- Average Refund by Churn Reason
+- Trial vs Paid Customer Churn
+
+---
+
+### 3.Product & Support Analytics
+
+Provides insights into customer engagement and support operations.
+
+**Includes:**
+
+- Support Tickets by Priority
+- Average Resolution Time
+- Customer Satisfaction
+- Most Used Features
+- Errors by Feature
+- Beta vs Non-Beta Feature Usage
+
+---
+
+## SQL Analysis
+
+The SQL scripts cover:
+
+- Data validation
+- Duplicate detection
+- Missing value checks
+- Customer segmentation
+- Revenue analysis
+- Churn analysis
+- Feature usage analysis
+- Business KPI calculations
+
+---
+
+## Python
+
+Python (Pandas) was used to:
+
+- Clean datasets
+- Validate imported data
+- Prepare data for Power BI
+- Generate dashboard-ready datasets
+
+---
+
+## Key Business Insights
+
+- Enterprise subscriptions generated the highest recurring revenue.
+- Event-based referrals experienced the highest customer churn.
+- Product features, budget constraints, and support issues were the leading churn reasons.
+- Customer acquisition increased steadily throughout the observed period.
+- Feature adoption varied significantly across the product portfolio.
+- Support ticket priority influenced average resolution time.
+
+---
+
+## ▶How to Run
+
+### 1.Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/ravenstack-saas-analytics.git
+```
+
+### 2.Create the PostgreSQL database
+
+Run:
+
+```
+sql/01_database_setup.sql
+```
+
+### 3.Import the CSV files
+
+Load all CSV files into PostgreSQL.
+
+### 4.Execute SQL scripts
+
+Run:
+```
+02_data_validation.sql
+03_customer_overview.sql
+04_revenue_analysis.sql
+05_churn_analysis.sql
+06_advanced_sql.sql
+```
+
+### 5.Open Power BI
+
+Open:
+```
+powerbi/SaaS_Customer_Churn_Analytics.pbix
+```
+
+---
+
+## Dashboard Preview
+
+![alt text](<Customer & Churn Analysis Screenshot-1.png>)
+![alt text](<Executive Dashboard Screenshot.png>)
+![alt text](<Product & Support Analytics Screenshot.png>)
+
+---
+
+## Skills Demonstrated
+
+- SQL Querying
+- PostgreSQL
+- Database Design
+- Data Validation
+- Data Cleaning
+- Exploratory Data Analysis
+- Business Intelligence
+- Power BI
+- Data Visualization
+- Python (Pandas)
+- Dashboard Development
+
+
+This project was built as part of my data analytics portfolio to demonstrate practical skills in SQL, PostgreSQL, Python, and Power BI.
